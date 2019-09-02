@@ -48,7 +48,7 @@ public class A1Adept {
 			    sum = sum + quant * pitemprice;
 			    
 			}
-			personlist[j] = First + " " + Last + "(" + String.format("%.2f", sum) + ")";
+			personlist[j] = First + " " + Last + " (" + String.format("%.2f", sum) + ")";
 			totallist[j] = sum;
 			
 		}
