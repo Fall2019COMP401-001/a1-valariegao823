@@ -20,7 +20,7 @@ public class A1Example {
 		
 		int count = scan.nextInt();
 		
-		System.out.println("count" + count);
+
 		// Create an array to store numbers.
 		
 		int[] values = new int[count];

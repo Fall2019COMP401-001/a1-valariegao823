@@ -28,7 +28,7 @@ public class A1Novice {
 				sum = sum + quant * price;
 				
 			}
-			System.out.println(First.charAt(0) + "." + Last + ": " + sum);
+			System.out.println(First.charAt(0) + ". " + Last + ": " + String.format("%.2f", sum));
 
 		}
 		
