@@ -9,23 +9,23 @@ public class A1Example {
 		// you know what Eclipse thinks it is using and
 		// so that you can confirm that it is 10.0 or higher.
 		
-		System.out.println("Your Java version: " + System.getProperty("java.version"));
+
 		
 		// Set up scanner object to read space-separated values
 		// from console input
 		
 		Scanner scan = new Scanner(System.in);
-
+		
 		// Read in count of numbers to process
 		
 		int count = scan.nextInt();
 		
-		
+		System.out.println("count" + count);
 		// Create an array to store numbers.
 		
 		int[] values = new int[count];
 		
-		
+
 		// Read values into the array
 		
 		for (int i=0; i<values.length; i++) {
