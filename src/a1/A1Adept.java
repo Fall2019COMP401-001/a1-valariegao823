@@ -56,7 +56,7 @@ public class A1Adept {
 		int smallest = getIndexOfSmallest(totallist);
 		System.out.println("Biggest: " + String.format("%.2f", personlist[largest]));
 		System.out.println("Smallest: " + String.format("%.2f", personlist[smallest]));
-		System.out.println("Average: " + String.format("%.2f", average(totallist));
+		System.out.println("Average: " + String.format("%.2f", average(totallist)));
 		
 	}
 	
