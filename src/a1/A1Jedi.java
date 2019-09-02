@@ -33,10 +33,22 @@ public class A1Jedi {
 			Last = scan.next();
 			npersonalitem = scan.nextInt();
 			
+			
+			// copy a new array = howmanycustomers
+			int[] pre_customers = new int[nitems];
+			for(int i = 0; i < pre_customers.length; i++) {
+				pre_customers[i] = howmanycustomers[i];
+			}
+			
 			for (int k = 0; k < npersonalitem; k++) {
 				quant = scan.nextInt();
 				pitemname = scan.next();
+				
 				int index = -1;
+				//int[] index = new int[k];
+				/*for (int b = 0; b < index.length,b++) {
+					index[b] = -1;
+				}*/
 
 			    for (int a = 0; (a < itemname.length) && (index == -1); a++) {
 			        if (pitemname.equals(itemname[a])) {
@@ -45,8 +57,12 @@ public class A1Jedi {
 			    }
 			    
 			    howmany[index] = howmany[index] + quant;
+			    
+                if(howmanycustomers[index] == pre_customers[index]) {
 			    howmanycustomers[index] = howmanycustomers[index] + 1;
+                }
 			}
+			
 		}
 		for (int n = 0; n < nitems; n++) {
 			if (Math.abs(howmany[n] - 0) < 0.00005) {

@@ -48,14 +48,14 @@ public class A1Adept {
 			    sum = sum + quant * pitemprice;
 			    
 			}
-			personlist[j] = First + "" + Last + "(" + sum + ")";
+			personlist[j] = First + "" + Last + "(" + String.format("%.2f", sum) + ")";
 			totallist[j] = sum;
 			
 		}
 		int largest = getIndexOfLargest(totallist);
 		int smallest = getIndexOfSmallest(totallist);
-		System.out.println("Biggest: " + String.format("%.2f", personlist[largest]));
-		System.out.println("Smallest: " + String.format("%.2f", personlist[smallest]));
+		System.out.println("Biggest: " + personlist[largest]);
+		System.out.println("Smallest: " + personlist[smallest]);
 		System.out.println("Average: " + String.format("%.2f", average(totallist)));
 		
 	}
